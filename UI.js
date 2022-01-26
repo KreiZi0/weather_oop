@@ -5,7 +5,7 @@ class UI {
 		this.location = document.querySelector('#location')
 	}
 
-	drawWeather ( data ) {
+	drawWeather (data) {
 		let celcius = Math.round(parseFloat(data.main.temp)-273.15);
 		let description = data.weather[0].description;
 
